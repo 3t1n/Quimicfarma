@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Shopping Cart')
+@section('title', 'Carrinho de compras')
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
@@ -11,7 +11,7 @@
     @component('components.breadcrumbs')
         <a href="#">Home</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Shopping Cart</span>
+        <span>Carrinho de Compras</span>
     @endcomponent
 
     <div class="cart-section container">
@@ -34,7 +34,7 @@
 
             @if (Cart::count() > 0)
 
-            <h2>{{ Cart::count() }} item(s) in Shopping Cart</h2>
+            <h2>{{ Cart::count() }} item(s) no seu Carrinho de Compras</h2>
 
             <div class="cart-table">
                 @foreach (Cart::content() as $item)
@@ -77,7 +77,7 @@
 
             @if (! session()->has('coupon'))
 
-                <a href="#" class="have-code">Have a Code?</a>
+                <a href="#" class="have-code">Você tem um cupom de desconto?</a>
 
                 <div class="have-code-container">
                     <form action="{{ route('coupon.store') }}" method="POST">
@@ -90,7 +90,7 @@
 
             <div class="cart-totals">
                 <div class="cart-totals-left">
-                    Shipping is free because we’re awesome like that. Also because that’s additional stuff I don’t feel like figuring out :).
+                   Os melhores preços
                 </div>
 
                 <div class="cart-totals-right">
@@ -101,10 +101,10 @@
                             <form action="{{ route('coupon.destroy') }}" method="POST" style="display:block">
                                 {{ csrf_field() }}
                                 {{ method_field('delete') }}
-                                <button type="submit" style="font-size:14px;">Remove</button>
+                                <button type="submit" style="font-size:14px;">Remover</button>
                             </form>
                             <hr>
-                            New Subtotal <br>
+                            Novo Subtotal <br>
                         @endif
                         Tax ({{config('cart.tax')}}%)<br>
                         <span class="cart-totals-total">Total</span>
@@ -123,22 +123,22 @@
             </div> <!-- end cart-totals -->
 
             <div class="cart-buttons">
-                <a href="{{ route('shop.index') }}" class="button">Continue Shopping</a>
-                <a href="{{ route('checkout.index') }}" class="button-primary">Proceed to Checkout</a>
+                <a href="{{ route('shop.index') }}" class="button">Continue Comprando</a>
+                <a href="{{ route('checkout.index') }}" class="button-primary">Ir para o pagamento</a>
             </div>
 
             @else
 
-                <h3>No items in Cart!</h3>
+                <h3>Sem items no seu carrinho!</h3>
                 <div class="spacer"></div>
-                <a href="{{ route('shop.index') }}" class="button">Continue Shopping</a>
+                <a href="{{ route('shop.index') }}" class="button">Continue Comprando</a>
                 <div class="spacer"></div>
 
             @endif
 
             @if (Cart::instance('saveForLater')->count() > 0)
 
-            <h2>{{ Cart::instance('saveForLater')->count() }} item(s) Saved For Later</h2>
+            <h2>{{ Cart::instance('saveForLater')->count() }} item(s) Salvos para depois</h2>
 
             <div class="saved-for-later cart-table">
                 @foreach (Cart::instance('saveForLater')->content() as $item)
@@ -156,13 +156,13 @@
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
 
-                                <button type="submit" class="cart-options">Remove</button>
+                                <button type="submit" class="cart-options">Remover</button>
                             </form>
 
                             <form action="{{ route('saveForLater.switchToCart', $item->rowId) }}" method="POST">
                                 {{ csrf_field() }}
 
-                                <button type="submit" class="cart-options">Move to Cart</button>
+                                <button type="submit" class="cart-options">Mover para o Carrinho</button>
                             </form>
                         </div>
 
@@ -175,7 +175,7 @@
 
             @else
 
-            <h3>You have no items Saved for Later.</h3>
+            <h3>Você não tem items salvos</h3>
 
             @endif
 

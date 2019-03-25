@@ -21,7 +21,7 @@
             <header class="with-background">
                 <div class="top-nav container">
                     <div class="top-nav-left">
-                        <div class="logo">Ecommerce</div>
+                        <div class="logo">QuimcFarma</div>
                         {{ menu('main', 'partials.menus.main') }}
                     </div>
                     <div class="top-nav-right">
@@ -47,7 +47,7 @@
             <div class="featured-section">
 
                 <div class="container">
-                    <h1 class="text-center">Laravel Ecommerce</h1>
+                    <h1 class="text-center">QuimicFarma</h1>
 
                     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi, consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit sunt aliquid possimus temporibus enim eum hic lorem.</p>
 
@@ -77,7 +77,7 @@
                     </div> <!-- end products -->
 
                     <div class="text-center button-container">
-                        <a href="{{ route('shop.index') }}" class="button">View more products</a>
+                        <a href="{{ route('shop.index') }}" class="button">Veja mais produtos</a>
                     </div>
 
                 </div> <!-- end container -->

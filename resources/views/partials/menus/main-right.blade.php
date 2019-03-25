@@ -1,10 +1,10 @@
 <ul>
     @guest
-    <li><a href="{{ route('register') }}">Sign Up</a></li>
-    <li><a href="{{ route('login') }}">Login</a></li>
+    <li><a href="{{ route('register') }}">Registrar</a></li>
+    <li><a href="{{ route('login') }}">Entrar</a></li>
     @else
     <li>
-        <a href="{{ route('users.edit') }}">My Account</a>
+        <a href="{{ route('users.edit') }}">Minha conta</a>
     </li>
     <li>
         <a href="{{ route('logout') }}"
@@ -18,7 +18,7 @@
         {{ csrf_field() }}
     </form>
     @endguest
-    <li><a href="{{ route('cart.index') }}">Cart
+    <li><a href="{{ route('cart.index') }}">Carrinho
     @if (Cart::instance('default')->count() > 0)
     <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
     @endif

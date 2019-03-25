@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Products')
+@section('title', 'Produtos')
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
@@ -11,7 +11,7 @@
     @component('components.breadcrumbs')
         <a href="/">Home</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>Shop</span>
+        <span>Compras</span>
     @endcomponent
 
     <div class="container">
@@ -34,7 +34,7 @@
 
     <div class="products-section container">
         <div class="sidebar">
-            <h3>By Category</h3>
+            <h3>Por Categoria</h3>
             <ul>
                 @foreach ($categories as $category)
                     <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('shop.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
@@ -46,8 +46,8 @@
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
                 <div>
                     <strong>Price: </strong>
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Low to High</a> |
-                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">High to Low</a>
+                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Crescente</a> |
+                    <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">Decrescente</a>
 
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <div class="product-price">{{ $product->presentPrice() }}</div>
                     </div>
                 @empty
-                    <div style="text-align: left">No items found</div>
+                    <div style="text-align: left">Não encontramos produtos</div>
                 @endforelse
             </div> <!-- end products -->
 
