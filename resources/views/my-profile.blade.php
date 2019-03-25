@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'My Profile')
+@section('title', 'Meu perfil')
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
@@ -11,7 +11,7 @@
     @component('components.breadcrumbs')
         <a href="/">Home</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>My Profile</span>
+        <span>Meu perfil</span>
     @endcomponent
 
     <div class="container">
@@ -36,13 +36,13 @@
         <div class="sidebar">
 
             <ul>
-              <li class="active"><a href="{{ route('users.edit') }}">My Profile</a></li>
-              <li><a href="{{ route('orders.index') }}">My Orders</a></li>
+              <li class="active"><a href="{{ route('users.edit') }}">Meu perfil</a></li>
+              <li><a href="{{ route('orders.index') }}">Meus pedidos</a></li>
             </ul>
         </div> <!-- end sidebar -->
         <div class="my-profile">
             <div class="products-header">
-                <h1 class="stylish-heading">My Profile</h1>
+                <h1 class="stylish-heading">Meu perfil</h1>
             </div>
 
             <div>
@@ -57,13 +57,14 @@
                     </div>
                     <div class="form-control">
                         <input id="password" type="password" name="password" placeholder="Password">
-                        <div>Leave password blank to keep current password</div>
+                        <div>
+                            Deixe a senha em branco para manter a senha atual</div>
                     </div>
                     <div class="form-control">
                         <input id="password-confirm" type="password" name="password_confirmation" placeholder="Confirm Password">
                     </div>
                     <div>
-                        <button type="submit" class="my-profile-button">Update Profile</button>
+                        <button type="submit" class="my-profile-button">Atualizar perfil</button>
                     </div>
                 </form>
             </div>

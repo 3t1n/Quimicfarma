@@ -35,7 +35,7 @@
             </div>
         @endif
 
-        <h1 class="checkout-heading stylish-heading">Checkout</h1>
+        <h1 class="checkout-heading stylish-heading">Pagamento</h1>
         <div class="checkout-section">
             <div>
                 <form action="{{ route('checkout.store') }}" method="POST" id="payment-form">

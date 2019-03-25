@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel Ecommerce Example</title>
+        <title>QuimicFarma</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -21,7 +21,7 @@
             <header class="with-background">
                 <div class="top-nav container">
                     <div class="top-nav-left">
-                        <div class="logo">QuimcFarma</div>
+                        <div class="logo">QuimicFarma</div>
                         {{ menu('main', 'partials.menus.main') }}
                     </div>
                     <div class="top-nav-right">
@@ -30,7 +30,7 @@
                 </div> <!-- end top-nav -->
                 <div class="hero container">
                     <div class="hero-copy">
-                        <h1>Laravel Ecommerce Demo</h1>
+                        <h1>demoooo</h1>
                         <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe integration.</p>
                         <div class="hero-buttons">
                             <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" class="button button-white">Screencasts</a>

@@ -45,7 +45,7 @@
             <div class="products-header">
                 <h1 class="stylish-heading">{{ $categoryName }}</h1>
                 <div>
-                    <strong>Price: </strong>
+                    <strong>Preço: </strong>
                     <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Crescente</a> |
                     <a href="{{ route('shop.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">Decrescente</a>
 

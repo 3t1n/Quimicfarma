@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'My Orders')
+@section('title', 'Meus Pedidos')
 
 @section('extra-css')
     <link rel="stylesheet" href="{{ asset('css/algolia.css') }}">
@@ -11,7 +11,7 @@
     @component('components.breadcrumbs')
         <a href="/">Home</a>
         <i class="fa fa-chevron-right breadcrumb-separator"></i>
-        <span>My Orders</span>
+        <span>Meus Pedidos</span>
     @endcomponent
 
     <div class="container">
@@ -36,13 +36,13 @@
         <div class="sidebar">
 
             <ul>
-              <li><a href="{{ route('users.edit') }}">My Profile</a></li>
-              <li class="active"><a href="{{ route('orders.index') }}">My Orders</a></li>
+              <li><a href="{{ route('users.edit') }}">Meu Perfil</a></li>
+              <li class="active"><a href="{{ route('orders.index') }}">Meus Pedidos</a></li>
             </ul>
         </div> <!-- end sidebar -->
         <div class="my-profile">
             <div class="products-header">
-                <h1 class="stylish-heading">My Orders</h1>
+                <h1 class="stylish-heading">Meus Pedidos</h1>
             </div>
 
             <div>
@@ -64,7 +64,7 @@
                         </div>
                         <div>
                             <div class="order-header-items">
-                                <div><a href="{{ route('orders.show', $order->id) }}">Order Details</a></div>
+                                <div><a href="{{ route('orders.show', $order->id) }}">Detalhes do pedido</a></div>
                                 <div>|</div>
                                 <div><a href="#">Invoice</a></div>
                             </div>
