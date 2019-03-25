@@ -21,7 +21,7 @@
             <header class="with-background">
                 <div class="top-nav container">
                     <div class="top-nav-left">
-                        <div class="logo">QuimicFarma</div>
+                        <div class="logo"> QuimicFarma</div>
                         {{ menu('main', 'partials.menus.main') }}
                     </div>
                     <div class="top-nav-right">
@@ -31,7 +31,7 @@
                 <div class="hero container">
                     <div class="hero-copy">
                         <h1>demoooo</h1>
-                        <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe integration.</p>
+                        <p>Mudar depois</p>
                         <div class="hero-buttons">
                             <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" class="button button-white">Screencasts</a>
                             <a href="https://github.com/drehimself/laravel-ecommerce-example" class="button button-white">GitHub</a>
@@ -49,7 +49,7 @@
                 <div class="container">
                     <h1 class="text-center">QuimicFarma</h1>
 
-                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi, consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit sunt aliquid possimus temporibus enim eum hic lorem.</p>
+                    <p class="section-description">muda dps</p>
 
                     <div class="text-center button-container">
                         <a href="#" class="button">Featured</a>
@@ -84,7 +84,7 @@
 
             </div> <!-- end featured-section -->
 
-            <blog-posts></blog-posts>
+
 
             @include('partials.footer')
 
