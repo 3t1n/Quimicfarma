@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>QuimicFarma| @yield('title', '')</title>
+        <title>QuimicFarma | @yield('title', '')</title>
 
         <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
 
