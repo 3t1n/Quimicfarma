@@ -898,8 +898,12 @@ header.with-background .hero .button {
 }
 
 header {
-  background: #0054a5;
+  background: #3f4444;
 }
+.nav-baixo {
+  background: #a4dbe8;
+}
+
 
 header .top-nav {
   display: -webkit-box;

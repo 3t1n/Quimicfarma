@@ -28,7 +28,7 @@
                     return markup;
                 },
                 empty: function (result) {
-                    return 'Sorry, we did not find any results for "' + result.query + '"';
+                    return 'Desculpa, não foi possível encontrar o resultado "' + result.query + '"';
                 }
             }
         }).on('autocomplete:selected', function (event, suggestion, dataset) {
